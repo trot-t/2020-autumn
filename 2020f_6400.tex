@@ -98,7 +98,7 @@
 \hspace{-2cm} % portrait
 \newcommand*{\CS}{9pt} % ширина колонки
 \begin{tabular}{p{7pt}|l|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}}
-\multicolumn{11}{c}{Ведомость посещения занятий по силовой электронике студентами 6400 группы} \\
+\multicolumn{11}{c}{Ведомость посещения занятий по преобразователям энергии студентами 6400 группы} \\
 \toprule 
 &&&&&&&&&&\\
 &&&&&&&&&&\\
@@ -146,24 +146,24 @@
 \toprule
 &&T1&T1& T2&T2& T3&T3& T4&T4&T5&T5&T6&T6&L1&L2\\
 \midrule
-1\,&  Барановский Руслан         &21.12& 29.12& & 21.12& 29.12&&&\\
+1\,&  Барановский Руслан         &21.12& 29.12& 21.12& 29.12&      &      &      &      & 21.12& 30.12\\
 2\,&  Евстратов Владимир         &&&&&&&&\\
-3\,&  Задорожнюк Даниил          &19.12& 19.12& 19.12& 29.12& &&&\\
+3\,&  Задорожнюк Даниил          &19.12& 19.12& 19.12& 29.12&      &      &      &      & 25.12& 29.12\\
 4\,&  Иванченко Максим Вадимович &12.10& 19.12& 05.11& 23.12& 15.11& 19.12& 15.11& 21.11& 22.12& 23.12\\
-5\,&  Маратов Мирас              &20.12& 29.12& 06.11& 29.12&&&&\\
+5\,&  Маратов Мирас              &20.12& 29.12& 06.11& 29.12&      &      &      &      & 20.12& 30.12\\
 \midrule
 6\,&  Обама Омбеде Николас Серж  &10.10& 17.10& 21.11& 21.11& 05.12& 23.12& 22.12& 23.12& 22.12& 23.12\\   % OBAMA Nicolas Serge % very good messages and attendancy records (and appreciate no screeming and yelling)
-7\,&  Седельников Вячеслав       &19.12& 19.12& 20.12& 29.12& 21.12&  --- &&\\
-8\,&  Уильям Михаэль             &10.10& 17.10& 21.11& 21.11& 21.11& 26.12& 22.12& 26.12& 22.12&26.12 \\   % Michael W.D
+7\,&  Седельников Вячеслав       &19.12& 19.12& 20.12& 29.12& 21.12&  --- &      &      & 24.12& 30.12\\
+8\,&  Уильям Михаэль             &10.10& 17.10& 21.11& 21.11& 21.11& 26.12& 22.12& 26.12& 22.12& 26.12\\   % Michael W.D
 9\,&  Филатенков Павел           &30.09 &23.12& 30.09& 23.12& 30.09& 23.12& 30.09& 23.12& 30.09& 23.12\\
-10\,& Фомина Елизавета           &12.12& 12.12& 20.12& 29.12& 20.12& 19.12& &\\
+10\,& Фомина Елизавета           &12.12& 12.12& 20.12& 29.12& 20.12& 19.12&      &      & 20.12& 26.12&&& 26.12\\
 \midrule
-11\,& Халил Зейн                 &12.12& 12.12& &&&&&\\
-12\,& Альмушреки Осама Абду Али  &10.10& 10.10& 17.10&17.10& 21.11&21.11& 21.12&21.12 & 21.12 & 21.12\\   % Osamah Almushreqi
+11\,& Халил Зейн                 &12.12& 12.12&      &      &      &     &      &      & 25.12& 26.12&&& 26.12\\
+12\,& Альмушреки Осама Абду Али  &10.10& 10.10& 17.10&17.10& 21.11&21.11& 21.12& 21.12& 21.12& 21.12\\   % Osamah Almushreqi
 13\,& Саид Амир                  &&&&&&&&\\
 14\,& Уллах Вахаб                &&&&&&&&\\
 15\,& Содан Крешимир             &&&&&&&&\\
-16\,& Масаве Паскаль Диоскори    &20.12& 29.12& 26.12& 29.12&&&&\\
+16\,& Масаве Паскаль Диоскори    &20.12& 29.12& 26.12& 29.12&     &     &      &      & ---  &     \\
 \bottomrule
 \end{tabular}
 
@@ -200,12 +200,14 @@ As to me I estimate by decay capacitor by $R_{load}$ (with lianerization exponen
 \item Ivanchenko -- has archive info, Graphs are right and have his numbers.
 
 \item OBAMA Nicolas Serge -- According to the student's list yours number is 6.(in the report picked up 12)
+
 \end{itemize}
 
 \subsection{Task 5 Down converter}
 \begin{itemize}
-\item Ivanchenko -- has archive info, report does not have code for the model 
-
+\item Ivanchenko -- fixed archive info, report does not have code for the model.
+ amplitude of riples in $V_{out}$ is very small. ${\small \Delta}V_{out}$ should be roughly 10\% from $V_{out}$ as required. This lead to extra costs for capacitor.
+                     Inductors and capacitors are expencive.
 \item OBAMA Nicolas Serge -- this interval [.0000501 - .0000520]  instead of
 \begin{verbatim}
 Vs 4 0 PWL(0 0 .0000501 0 .0000520 1 .0002 1) r=0
@@ -215,6 +217,16 @@ could be made shorter
 Vs 4 0 PWL(0 0 .0000520 0 .00005201 1 .0002 1) r=0
 \end{verbatim}
 
+\item Zain Khalil -- archive info does not have author and subject, pictures have watermarks 'activate pirate software' , digits in reports have mixed locale: "1.2" and "1,2".
+                     Program model is inconsistent with graphs. {\tt~C1~3~0~0.23F} -- 'u' sign was ommit here. $R_{Load}$ is not present at all.
+\item Baranouski -- archive info is absent: author, subject, keywords. amplitude of riples in $V_{out}$ is very small.  ${\small \Delta}V_{out}$ should be roughly 10\% from $V_{out}$ as required. This lead to extra costs for capacitor.
+\item Maratov --     amplitude of riples in $V_{out}$ is very small. ${\small \Delta}V_{out}$ should be roughly 10\% from $V_{out}$ as required. This lead to extra costs for capacitor.
+
+\item Sedelnikov --  amplitude of both riples in $V_{out}$  and riples in $I_{L}$ are very small. amplitude of the riples should be roughly 10\% from correspondent average values.
+                   Program model is absent in the report.
+\item Zadorozhnyuk -- archive info in pdf file has ifrormation from 1-st task. Inspector should be different student not me.  amplitude of riples in $V_{out}$ is very small.
+\item Maratov -- amplitude of both riples in $V_{out}$  and riples in $I_{L}$ are very small. amplitude of the riples should be roughly 10\% from correspondent average values.
+                   Program model is absent in the report.
 \end{itemize}
 
 
