@@ -14,6 +14,7 @@
 \usepackage{tikz}
 \usepackage{siunitx}
 \usepackage[american,cuteinductors,smartlabels]{circuitikz}
+\usetikzlibrary{decorations.text}
 
 \usepackage{hyperref}
 
@@ -21,16 +22,21 @@
 %\usepackage{showframe} % для отладки позиции на странице
 \usepackage{cancel}
 
+%\usepackage{showframe}
 %\setlength{\voffset}{-72pt} %отступ сверху - чтобы увидеть откомментарить \usepackage{showframe}
-\setlength{\voffset}{-36pt} %landscape
-\setlength{\footskip}{-20pt} %landscape
+%\setlength{\voffset}{-36pt} %landscape
+\setlength{\voffset}{-56pt} %landscape
+\setlength{\footskip}{-120pt} %landscape
 \setlength{\topmargin}{0pt} 
 %\setlength{\headheight{1pt}
 \setlength{\headsep}{0pt}
-\setlength{\hoffset}{-72pt} %landscape
+%\setlength{\hoffset}{-72pt} %landscape
+\setlength{\hoffset}{-222pt} %landscape
 \setlength{\marginparwidth}{0pt}
-\setlength{\textwidth}{530pt} %landscape
+\setlength{\textwidth}{800pt} %landscape
 \setlength{\textheight}{538pt} %landscape
+\setlength{\footskip}{-60pt}
+
 
 
 %\author{ Прокшин Артем \\
@@ -94,8 +100,8 @@
 \vspace{-0cm}
 %\vspace*{1\baselineskip} %landscape
 %\begin{table} \centering 
-%\hspace{-6cm} % landscape
-\hspace{-2cm} % portrait
+\hspace{2cm} % landscape
+%\hspace{-2cm} % portrait
 \newcommand*{\CS}{9pt} % ширина колонки
 \begin{tabular}{p{7pt}|l|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}|p{\CS}}
 \multicolumn{11}{c}{Ведомость посещения занятий по преобразователям энергии студентами 6400 группы} \\
@@ -140,7 +146,7 @@
 \end{tabular} 
 \newpage
 %
-\hspace{-3.1cm} %landscape
+%\hspace{-3.1cm} %landscape
 \begin{tabular}{l|llccc|cccc|cccccc}
 \multicolumn{10}{c}{выполнение лабораторнах работ, 6400 группа} \\
 \toprule
@@ -152,18 +158,18 @@
 4\,&  Иванченко Максим Вадимович &12.10& 19.12& 05.11& 23.12& 15.11& 19.12& 15.11& 21.12& 22.12& 23.12\\ %Ivanchenko M.V.
 5\,&  Маратов Мирас              &20.12& 29.12& 06.11& 29.12& 20.12& 30.12& 21.12& 30.12& 20.12& 30.12\\ %Maratov M.K.
 \midrule
-6\,&  Обама Омбеде Николас Серж  &10.10& 17.10& 21.11& 21.11& 05.12& 23.12& 22.12& 23.12& 22.12& 23.12\\   % OBAMA Nicolas Serge % very good messages and attendancy records (and appreciate no screeming and yelling)
-7\,&  Седельников Вячеслав       &19.12& 19.12& 20.12& 29.12& 21.12&  --- & 21.12& 30.12& 24.12& 30.12\\   % Sedelnikov V.I.
+6\,&  Обама Омбеде Николас Серж  &10.10& 17.10& 21.11& 21.11& 05.12& 23.12& 22.12& 23.12& 22.12& 23.12&&&31.12&31.12\\   % OBAMA Nicolas Serge % very good messages and attendancy records (and appreciate no screeming and yelling)
+7\,&  Седельников Вячеслав       &19.12& 19.12& 20.12& 29.12& 21.12&  --- & 21.12& 30.12& 24.12& 30.12&&&31.12&31.12\\   % Sedelnikov V.I.
 8\,&  Уильям Михаэль             &10.10& 17.10& 21.11& 21.11& 21.11& 26.12& 22.12& 26.12& 22.12& 26.12\\   % Michael W.D
 9\,&  Филатенков Павел           &30.09 &23.12& 30.09& 23.12& 30.09& 23.12& 30.09& 23.12& 30.09& 23.12\\
 10\,& Фомина Елизавета           &12.12& 12.12& 20.12& 29.12& 20.12& 19.12& 19.12& 19.12& 20.12& 26.12&&& 26.12 \\  % Fomina Elizabeth A.
 \midrule
 11\,& Халил Зейн                 &12.12& 12.12&  --- &  --- & 26.12& 26.12& 25.12& 26.12& 25.12& 26.12&&& 26.12\\ % Zain khalil
 12\,& Альмушреки Осама Абду Али  &10.10& 10.10& 17.10& 17.10& 21.11& 21.11& 21.12& 21.12& 21.12& 21.12\\   % Osamah Almushreqi
-13\,& Саид Амир                  &     &      &      &      & 30.12& 30.12& 30.12& 30.12\\
+13\,& Саид Амир                  &     &      &      &      & 30.12& 30.12& 30.12& 30.12& 30.12& 31.12\\ % saeedamir
 14\,& Уллах Вахаб                &&&&&&&&\\
 15\,& Содан Крешимир             &&&&&&&&\\
-16\,& Масаве Паскаль Диоскори    &20.12& 29.12& 26.12& 29.12& 20.12& 26.12& 26.12& 26.12& ---  & ---    \\ % Pascal Masawe
+16\,& Масаве Паскаль Диоскори    &20.12& 29.12& 26.12& 29.12& 20.12& 26.12& 26.12& 26.12& 30.12& 31.12    \\ % Pascal Masawe
 \bottomrule
 \end{tabular}
 
@@ -232,7 +238,44 @@ Vs 4 0 PWL(0 0 .0000520 0 .00005201 1 .0002 1) r=0
 \item Zadorozhnyuk -- archive info in pdf file has ifrormation from 1-st task. Inspector should be different student not me.  amplitude of riples in $V_{out}$ is very small.
 \item Maratov -- amplitude of both riples in $V_{out}$  and riples in $I_{L}$ are very small. amplitude of the riples should be roughly 10\% from correspondent average values.
                    Program model is absent in the report.
+\item Saeed Amir -- used open software KiCad. This is good!
 \end{itemize}
 
+\subsection{Lab \textnumero 1 Research of characteristics of power semiconductor devices}
+\url{https://github.com/trot-t/2019-solar/blob/master/lab_en1.pdf}
+\begin{itemize}
+\item Sedelnicov -- at page5 you are not reach point $V_{zigzag}$ when current starts to inrcrease drammaticaly (the limit of the voltmeter V1 has 300V, or by the key below of the voltmeter V1 you could extend the limit to 600V)
+The mesurements shoud be when capacitor $C_1$ is switch off (bad conditions $\equiv$ classification conditions). But your mesurements were finished at $40\times 4$V.
+This dramatical increase of current should be mesured in VAC for both directions (direct and backward). And VAC should be taken at $V_{control}=0$.
+Minimum value of $Vi_{zigzag}$ were current "folds" is used to figure out class of thyristor. 
+Take into account since the voltage has a half-wave sinusoidal shape, conversion factor is $\pi$.
+\end{itemize}
+
+
+\subsection{Lab \textnumero 2 Research of unmanaged rectifiers and filters}
+\url{https://github.com/trot-t/2019-solar/blob/master/lab_en2.pdf}
+
+\subsection{Lab \textnumero 4 Research of 3-phase half-wave thyristor converters}
+\url{https://github.com/trot-t/2019-solar/blob/master/lab_en4.pdf}
+\begin{itemize}
+\item OBAMA Nicolas Serge 
+\begin{tikzpicture}
+\draw[thin,->] (0,0) -- (8,0) node[below] {$I$};
+\draw[thin,->] (0,0) -- (0,6) node[left] {$U$};
+\draw[domain=0.7:6.7, thick, dashed, red, thick,postaction={decorate,decoration={text along path,text align=left,transform={yshift=2mm}, text={external characteristic}}}] plot(\x,{-0.2*\x+5}) node[right] {$\alpha=0$};
+\draw[domain=0.7:6.7, thick, dashed, red] plot(\x,{-0.18*\x+3.33}) node[right] {$\alpha=30$};
+\draw[domain=0.7:6.7, thick, dashed, red] plot(\x,{-0.16*\x+1.66}) node[right] {$\alpha=60$};
+\draw[domain=0.7:6.7, thick, dashed, red] plot(\x,{-0.14*\x+0}) node[right] {$\alpha=90$};
+%\draw[domain=0.7:7.2, thick,dashed, blue]  plot(\x,{0.6*\x+.5}) node[right] {how mesurements where taken};
+\draw [thick,dashed, blue, thick,postaction={decorate,decoration={text along path,text align=center,transform={yshift=-4mm}, text={how mesurements where taken}}}] (0.7,{0.6*0.7+.5}) to ({7.2},{0.6*7.2+.5});
+
+% points
+\draw[fill,blue] ({ 1.166/0.76}, {0.6*1.166/0.76+.5} ) circle (3pt);
+\draw[fill,blue] ({ 2.833/0.78}, {0.6*2.833/0.78+.5} ) circle (3pt);
+\draw[fill,blue] ({ 4.5/0.8}, {0.6*4.5/0.8+.5} ) circle (3pt);
+
+\end{tikzpicture}
+
+\end{itemize}
 
 \end{document}
